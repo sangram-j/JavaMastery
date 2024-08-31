@@ -10,7 +10,6 @@ public class CustomThread extends Thread{
     //this is called as segment locking or bucket locking in ConcurrentHashMap
     public void run(){
         try{
-
             Thread.sleep(1000);
             map.put(4,"d");
         } catch (Exception e) {
