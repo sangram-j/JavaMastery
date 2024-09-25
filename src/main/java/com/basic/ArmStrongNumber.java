@@ -24,16 +24,33 @@ public class ArmStrongNumber {//sum of cube of all digits
 	
 	public static void main(String[] args) {
 		ArmStrongNumber armStrongNumber= new ArmStrongNumber();
-		Scanner sc=new Scanner(System.in);
+		/*Scanner sc=new Scanner(System.in);
 		System.out.println("Check below no is armstrong or not");
 		System.out.println("Enter the number");
-		int value=sc.nextInt();
-		armStrongNumber.isArmStrongNumber(value);
+		int value=sc.nextInt();*/
+		//armStrongNumber.isArmStrongNumber(value);
+		isASnumber(153);
 		
 		/*if(armStrongNumber.isArmStrongNumber(value)) {
 			System.out.println(value+" is armstrong");
 		}else {
 			System.out.println(value+" is not armstrong");
 		}*/
+	}
+	public static boolean isASnumber(int no){
+		int temp = no;
+		int rem ;
+		int sum = 0;
+		while (no != 0){
+			rem = no % 10;
+			sum = sum + (rem*rem*rem);
+			no = no/10;
+		}
+		if(temp == sum){
+			System.out.println("this is armstrong no");
+		}else{
+			System.out.println("not armstrong no");
+		}
+		return false;
 	}
 }
