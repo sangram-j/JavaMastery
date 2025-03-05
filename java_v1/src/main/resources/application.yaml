@@ -1,0 +1,43 @@
+server :
+  port : 8081
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ftth?currentSchema=public
+    username: postgres
+    password: root
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# Camunda BPM Configuration
+camunda:
+  bpm:
+    admin-user:
+      id: demo
+      password: demo
+    job-execution:
+      deployment-aware: true
+      enabled: true
+      core-pool-size: 10
+      keep-alive-seconds: 30
+      lock-time-in-millis: 60000
+      max-jobs-per-acquisition: 5
+      max-pool-size: 100
+      queue-capacity: 100
+      maxWait: 10000
+      wait-time-in-millis: 30000
+      backoff-time-in-millis: 10000
+      max-backoff: 60000
+
+md_app_cache: true
+
