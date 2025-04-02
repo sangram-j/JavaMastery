@@ -13,7 +13,7 @@ public class KafkaConsumer {
         log.info("consumer consume the events {} ", customer.toString());
     }*/
 
-    @KafkaListener(topics = "javatechie-demo1",groupId = "jt-group-new")
+    @KafkaListener(topics = "payment-topic",groupId = "jt-group-new")
     public void consume2(String message) {
         log.info("consumer2 consume the message {} ", message);
     }

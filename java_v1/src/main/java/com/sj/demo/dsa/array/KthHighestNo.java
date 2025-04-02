@@ -8,7 +8,7 @@ public class KthHighestNo {
     public static void main(String[] args) {
 
         int arr [] = {1,5,9,2,34,7,0};
-        int k = 2;
+        int k = 1;
 
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         for(int i =0; i < arr.length; i++){

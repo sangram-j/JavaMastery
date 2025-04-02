@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BubbleSort {
     public static void main(String[] args) {
         int[] input = {9, 8, 2, 1, 4, 3, 7, 6, 5};
-        System.out.println(Arrays.toString(input));
+        System.out.println("Input array :- "+Arrays.toString(input));
         bubbleSort(input);
     }
 
@@ -27,6 +27,6 @@ public class BubbleSort {
             if (!swapped)
                 break;
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Output array :- "+Arrays.toString(arr));
     }
 }
