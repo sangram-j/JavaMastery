@@ -27,7 +27,7 @@ public class MissingNumberInArray {
         return missingNum;
     }
 
-    public static List<Integer> getMissingNumbers(int arr[]) {
+    public static List<Integer> getMissingNumbers(int[] arr) {
 
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {

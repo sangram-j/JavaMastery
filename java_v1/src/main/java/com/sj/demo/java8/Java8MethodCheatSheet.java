@@ -77,6 +77,11 @@ public class Java8MethodCheatSheet {
         //System.out.println("sortedSalariedEmp :- "+sortedSalariedEmp);
         //descSortedSalariedEmp.forEach(e-> System.out.println(e.getName() + " "+ e.getSalary()));
 
+        employee.stream()
+                .sorted(Comparator.comparing(Employee::getName)
+                        .thenComparing(Employee::getSalary))
+                .collect(Collectors.toList())
+                .forEach(st-> System.out.println(st.getName() + " " +st.getSalary()));
 
         //min & max
         Optional<Employee> maxPaidEmp = employee.stream()

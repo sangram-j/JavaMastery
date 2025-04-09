@@ -11,8 +11,8 @@ public class KthHighestNo {
         int k = 1;
 
         PriorityQueue<Integer> queue = new PriorityQueue<>();
-        for(int i =0; i < arr.length; i++){
-            queue.add(arr[i]);
+        for (int j : arr) {
+            queue.add(j);
 
             if (queue.size() > k) {
                 queue.poll();

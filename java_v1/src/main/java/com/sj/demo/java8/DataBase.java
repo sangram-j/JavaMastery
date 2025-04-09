@@ -34,8 +34,8 @@ public class DataBase {
         List<Students> list = new ArrayList<>();
         list.add(new Students(10, "Sangram", "IT", 700000));
         list.add(new Students(11, "Nikhil", "CIVIL", 100000));
-        list.add(new Students(12, "Prakash", "MECH", 500000));
-        list.add(new Students(13, "Prakash2", "MECH2", 550000));
+        list.add(new Students(12, "Prakash", "MECH", 550000));
+        list.add(new Students(13, "Prakash", "MECH2", 500000));
 
         return list;
     }

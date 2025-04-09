@@ -35,7 +35,7 @@ public class DuplicateNumber {
         return slow;
     }
 
-    public static int getDuplicateUsingSet(int arr[]) {
+    public static int getDuplicateUsingSet(int[] arr) {
 
         HashSet hashSet = new HashSet();
         for (int i = 0; i < arr.length; i++) {
@@ -45,8 +45,8 @@ public class DuplicateNumber {
         }
         return 0;
     }
-    public static int getDuplicatesUsingHashMap(int arr[]) {
-        HashMap<Integer,Integer> hashMap = new HashMap();
+    public static int getDuplicatesUsingHashMap(int[] arr) {
+        HashMap<Integer,Integer> hashMap = new HashMap<>();
 
         for(int i = 0; i < arr.length ; i++) {
             hashMap.put(arr[i], hashMap.getOrDefault(arr[i], 0) + 1);
